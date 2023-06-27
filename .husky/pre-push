@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo -e "===\n>> Pre-Push Hook: Running test"
+npm run test
+echo -e "===\n>> Pre-Push Hook: End running test"
+echo -e "===\n>> Pre-Push Hook: Building SSR application"
+npm run build
+echo -e "===\n>> Pre-Push Hook: Finish Pre-Push Hook"
