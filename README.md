@@ -8,6 +8,7 @@ This project is a template for developing Angular applications using Visual Stud
 - ESlint
 - Commit lint
 - Husky
+- Testing library
 
 ## Prerequisites
 
