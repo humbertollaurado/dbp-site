@@ -62,7 +62,7 @@
       "eslint --fix",
       "prettier --config ./.prettierrc.js --write"
     ],
-    "**/*.{css,scss,md,html,json}": [
+    "**/*.{css,scss,md,html,ts,json}": [
       "prettier --config ./.prettierrc.js --write"
     ]
   }
