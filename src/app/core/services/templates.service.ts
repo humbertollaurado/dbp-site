@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
+import { ILink } from '../Interfaces/ilink.interface';
+import { IKeyValuePair } from '../Interfaces/iKeyValuePair.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TemplatesService {
-  private links = [
+  links: ILink[] = [
     { link: '', name: 'some', values: ['', 'Home'] },
     { link: 'services', name: 'services', values: ['services', 'Services'] },
     {
@@ -21,7 +23,9 @@ export class TemplatesService {
     { link: 'contact', name: 'contact', values: ["let's talk", 'Contact'] },
   ];
 
-  getLink(): any[] {
-    return this.links;
-  }
+  socialNetwork: IKeyValuePair[] = [
+    { id: '1', value: 'LinkedIn' },
+    { id: '2', value: 'Twitter' },
+    { id: '3', value: 'Instagram' },
+  ];
 }

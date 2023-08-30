@@ -3,7 +3,7 @@
     class="flex justify-between md:p-12 pt-20 md:order-last"
     data-testId="container-links">
     <div class="md:p-10 p-3" data-testId="container-templates">
-      <ul *ngFor="let link of links; trackBy: trackByName">
+      <ul *ngFor="let link of templateService.links; trackBy: trackByName">
         <li class="p-1">
           <a href="" class="text-white" data-testId="link-template">{{
             link.values[1]
@@ -14,9 +14,11 @@
 
     <div class="md:p-10 p-3" data-testId="container-social">
       <ul>
-        <li class="p-1"><a href="" class="text-zinc-400">LinkedIn</a></li>
-        <li class="p-1"><a href="" class="text-zinc-400">Twitter</a></li>
-        <li class="p-1"><a href="" class="text-zinc-400">Instagram</a></li>
+        <li
+          class="p-1"
+          *ngFor="let item of templateService.socialNetwork; trackBy: trackBy">
+          <a href="" class="text-zinc-400">{{ item.value }}</a>
+        </li>
       </ul>
     </div>
   </div>

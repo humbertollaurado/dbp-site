@@ -1,21 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { TemplatesService } from 'src/app/shared/templates.service';
+import { Component, inject } from '@angular/core';
+import { ILink } from '../Interfaces/ilink.interface';
+import { TemplatesService } from '../services/templates.service';
+import { IKeyValuePair } from '../Interfaces/iKeyValuePair.interface';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent implements OnInit {
-  links: any[] = [];
+export class FooterComponent {
+  templateService = inject(TemplatesService);
 
-  constructor(private serviceTemplates: TemplatesService) {}
-
-  ngOnInit(): void {
-    this.links = this.serviceTemplates.getLink();
+  trackByName(index: number, link: ILink): string {
+    return link.name;
   }
 
-  trackByName(index: number, link: any): string {
-    return link.name;
+  trackBy(index: number, link: IKeyValuePair): string {
+    return link.id;
   }
 }
