@@ -1,13 +1,6 @@
 <nav class="bg-transparent" data-testId="navbar">
   <div class="flex justify-between p-2" data-testId="container">
     <div class="items-center" data-testId="container-logo">
-      <a href="" class="p-6">
-        <img
-          class="h-12 w-48 mx-5 lg:block hidden"
-          src="https://dualbootpartners.com/wp-content/uploads/2022/02/DPB_LOGO_HORIZONTAL.svg"
-          alt="Dualboot Partners Company"
-          data-testId="DBP-logo" />
-      </a>
       <a href="">
         <img
           class="lg:hidden w-12 h-12 mt-5 mx-3"
@@ -15,9 +8,16 @@
           alt="Dualboot Partners Logo"
           data-testId="DBP-logo-horizontal" />
       </a>
+      <a href="" class="p-6">
+        <img
+          class="h-12 w-48 mx-5 lg:block hidden"
+          src="https://dualbootpartners.com/wp-content/uploads/2022/02/DPB_LOGO_HORIZONTAL.svg"
+          alt="Dualboot Partners Company"
+          data-testId="DBP-logo" />
+      </a>
     </div>
     <button class="text-white lg:hidden" type="button" (click)="showMenu()">
-      <i class="ph ph-list ml-6 mt-2 px-2"></i>
+      <i class="ph ph-list ml-6 mt-2 px-2 text-2xl"></i>
     </button>
     <!-- Menu pantallas más LG-->
     <ul
