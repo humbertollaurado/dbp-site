@@ -1,0 +1,107 @@
+<nav class="bg-transparent" data-testId="navbar">
+  <div class="flex justify-between p-2" data-testId="container">
+    <div class="items-center" data-testId="container-logo">
+      <a href="">
+        <img
+          class="lg:hidden w-12 h-12 mt-5 mx-3"
+          src="https://dualbootpartners.com/wp-content/uploads/2022/05/LogotypeDualboot.svg"
+          alt="Dualboot Partners Logo"
+          data-testId="DBP-logo-horizontal" />
+      </a>
+      <a href="" class="p-6">
+        <img
+          class="h-12 w-48 mx-5 lg:block hidden"
+          src="https://dualbootpartners.com/wp-content/uploads/2022/02/DPB_LOGO_HORIZONTAL.svg"
+          alt="Dualboot Partners Company"
+          data-testId="DBP-logo" />
+      </a>
+    </div>
+    <button class="text-white lg:hidden" type="button" (click)="showMenu()">
+      <i class="ph ph-list ml-6 mt-2 px-2 text-2xl"></i>
+    </button>
+    <!-- Menu pantallas más LG-->
+    <ul
+      class="hidden lg:flex lg:items-center lg:justify-end p-8"
+      data-testId="ul">
+      <li>
+        <a href="#" data-testId="services" class="text-white rounded-md px-3"
+          >Services</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          data-testId="case-studies"
+          class="text-white rounded-md px-3"
+          >Case Studies</a
+        >
+      </li>
+      <li>
+        <a href="#" data-testId="insights" class="text-white rounded-md px-3"
+          >Insights</a
+        >
+      </li>
+      <li>
+        <a href="#" data-testId="about-us" class="text-white rounded-md px-3"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          data-testId="lets-talk"
+          class="text-white border-white rounded-full m-3 py-2 px-6 border-2 hover:bg-white hover:text-black"
+          href="">
+          Let’s talk ↓
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Menu pantallas pequeñas -->
+  <ul
+    class="lg:hidden px-2 w-full bg-zinc-800"
+    *ngIf="showCode"
+    data-testId="ul-responsive">
+    <li class="">
+      <a
+        href="#"
+        class="block text-white rounded-md px-3 py-2"
+        data-testId="services-responsive"
+        >Services</a
+      >
+    </li>
+    <li class="">
+      <a
+        href="#"
+        class="text-white rounded-md px-3 py-2 block"
+        data-testId="case-studies-responsive"
+        >Case Studies</a
+      >
+    </li>
+    <li class="">
+      <a
+        href="#"
+        class="text-white rounded-md px-3 py-2 block"
+        data-testId="insights-responsive"
+        >Insights</a
+      >
+    </li>
+    <li class="">
+      <a
+        href="#"
+        class="text-white rounded-md px-3 py-2 block"
+        data-testId="about-us-responsive"
+        >About Us</a
+      >
+    </li>
+    <li class="">
+      <a href="">
+        <span
+          class="text-white px-3 py-2 block"
+          data-testId="lets-talk-responsive">
+          Let’s talk ↓
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
