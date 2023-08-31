@@ -5,9 +5,7 @@
     <div class="md:p-10 p-3" data-testId="container-templates">
       <ul *ngFor="let link of templateService.links; trackBy: trackByName">
         <li class="p-1">
-          <a href="" class="text-white" data-testId="link-template">{{
-            link.values[1]
-          }}</a>
+          <a href="" class="text-white">{{ link.values[1] }}</a>
         </li>
       </ul>
     </div>

@@ -26,11 +26,22 @@ describe(FooterComponent, () => {
       'p-3',
     ]);
 
+    expect(screen.getByText('Services')).toBeInTheDocument();
+    expect(screen.getByText('Home')).toBeInTheDocument();
+    expect(screen.getByText('Case studies')).toBeInTheDocument();
+    expect(screen.getByText('Insights')).toBeInTheDocument();
+    expect(screen.getByText('About us')).toBeInTheDocument();
+    expect(screen.getByText('Contact')).toBeInTheDocument();
+
     const containerSocial = screen.getByTestId('container-social');
     expect(Array.from(containerSocial.classList).sort()).toEqual([
       'md:p-10',
       'p-3',
     ]);
+
+    expect(screen.getByText('Instagram')).toBeInTheDocument();
+    expect(screen.getByText('LinkedIn')).toBeInTheDocument();
+    expect(screen.getByText('Twitter')).toBeInTheDocument();
 
     const containerInfo = screen.getByTestId('container-info');
     expect(Array.from(containerInfo.classList).sort()).toEqual([
