@@ -1,4 +1,4 @@
-<footer class="bg-zinc-800">
+<footer class="bg-zinc-800 absolute inset-x-0 p-4">
   <div class="md:flex justify-between" data-testId="footer">
     <div
       class="flex justify-between md:p-12 pt-20 md:order-last"
@@ -6,7 +6,9 @@
       <div class="md:p-10 p-3" data-testId="container-templates">
         <ul *ngFor="let link of templateService.links; trackBy: trackByName">
           <li class="p-1">
-            <a href="" class="text-white">{{ link.values[1] }}</a>
+            <a href="{{ link.link }}" class="text-white">{{
+              link.values[1]
+            }}</a>
           </li>
         </ul>
       </div>
