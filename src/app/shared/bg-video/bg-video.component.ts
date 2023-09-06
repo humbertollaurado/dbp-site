@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { VideoService } from '../video.service';
 
 @Component({
   selector: 'app-bg-video',
