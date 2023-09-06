@@ -1,0 +1,27 @@
+<div class="fixed w-full h-full video-container brightness-50">
+  <video
+    preload="auto"
+    autoplay
+    playsinline
+    loop
+    muted
+    class="w-full absolute inset-0 h-full object-cover">
+    <source src="{{ videoWebm }}" type="video/webm" />
+    <source src="{{ videoMp }}" type="video/mp4" />
+    <source src="{{ videoOgv }}" type="video/ogg" />
+  </video>
+</div>
+<div class="pt-20 pb-28 px-7 mt-8">
+  <div class="mb-6">
+    <h1 class="text-white h1 text-7.5xl">
+      {{ titleText1 }} <i> {{ textStyle }} </i>
+    </h1>
+    <h2 class="text-white h1 text-7.5xl">{{ titleText2 }}</h2>
+  </div>
+  <p class="text-white grid grid-cols-2 text-sm mb-10">
+    {{ bodyText }}
+  </p>
+  <a href="" class="text-white underline p-3 text-sm"
+    ><small>{{ linkText }}</small></a
+  >
+</div>
