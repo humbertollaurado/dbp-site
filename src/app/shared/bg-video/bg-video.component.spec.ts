@@ -1,7 +1,6 @@
 import '@testing-library/angular';
 import { BgVideoComponent } from './bg-video.component';
 import { screen, render } from '@testing-library/angular';
-import { Expression } from '@angular/compiler';
 
 describe(BgVideoComponent, () => {
   it('Should render video link', async () => {

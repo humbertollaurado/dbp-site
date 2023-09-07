@@ -5,9 +5,14 @@ module.exports = {
   ],
   theme: {
     fontSize: {
+      'xs': ['1.0rem', {
+        lineHeight: '1.6rem',
+        letterSpacing: '-0,05em',
+        fontWeight: '400',
+      }],
       'sm': [ '1.25rem', {
         lineHeight: '2rem',
-        letterSpacing: '-0.06em',
+        letterSpacing: '-0.05em',
         fontWeight: '400',
       }],
       '2xl': ['1.5rem', {
@@ -15,7 +20,7 @@ module.exports = {
         letterSpacing: '-0.01em',
         fontWeight: '500',
       }],
-      '3xl': ['1.875rem', {
+      '3xl': ['2rem', {
         lineHeight: '2.25rem',
         letterSpacing: '-0.02em',
         fontWeight: '700',
